@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:500594117d346a5d532aa782fcdacc7647af3082fd9fa9c5f3ed2f9539310fdd
-size 1390
+B205 자율프로젝트
+
+### Branch
+
+| GIT FLOW를 참조하여 개발할 것.
+
+### GIT Convention
+
+
+![gitflow1.png](./gitflow1.png)
+
+![gitflow2.png](./gitflow2.png)
+
+
+
+---
+# 🌊 <span style="background-color:#C0FFFF"> OpenAPI </span> 
+
