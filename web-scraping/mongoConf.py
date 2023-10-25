@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6072266b84693c64b4b0313838c6326ddbb0ee3015b50bfe2b5f318fe96d4142
-size 1192
+from pymongo import MongoClient
+import time
+
+
+mongodb_URI = "mongodb+srv://S09P31B205:z5HxUpl4gB@ssafy.ngivl.mongodb.net/S09B31B205?authSource=admin"
+client = MongoClient(mongodb_URI)
+db = client["S09P31B205"]
+collection = db["wiki_HTML"]
+time.sleep(1)
+docs = {
+    "hi":"hi"
+}
+
+res = collection.insert_one(docs)
+client.close()
+
