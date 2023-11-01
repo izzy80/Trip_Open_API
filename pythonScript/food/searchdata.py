@@ -1,14 +1,3 @@
-import pandas as pd
-
-csv_file_path = 'searchData_ori.csv'
-output_csv_file = 'searchData_new.csv'
-
-# CSV 파일을 pandas로 읽기
-df = pd.read_csv(csv_file_path, encoding='cp949')
-
-# 데이터 정제하기
-df['title'] = df['title'].str.replace(r'\([^)]*\)|\[[^\]]*\]', '', regex=True)
-df['naddr1'] = df['addr1'].str.split(' ').str[:2].str.join(' ')
-df['naddr2'] = df['addr1'].str.split(' ').str[:3].str.join(' ')
-
-df.to_csv(output_csv_file, index=False, encoding='cp949')
+version https://git-lfs.github.com/spec/v1
+oid sha256:8496f7527345b5b2a468c92a2f535d663ed31c2c7587e2a156d6f875bf6300d0
+size 1162
