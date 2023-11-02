@@ -1,22 +1,3 @@
-server:
-  port: 9999
-
-
-spring:
-  jackson:
-    time-zone: Asia/Seoul
-  data:
-    mongodb:
-      uri: mongodb+srv://S09P31B205:z5HxUpl4gB@ssafy.ngivl.mongodb.net/S09B31B205?authSource=admin
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/enjoytrip?serverTimezone=Asia/Seoul
-    username: root
-    password: ssafy
-  jpa:
-    open-in-view: false
-    hibernate:
-      ddl-auto: create
-
-# mongoDB
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:560733f2efe7357d098422e1dde24bfbfadb91fa75dbe43bd404b95cea21d1dd
+size 543
