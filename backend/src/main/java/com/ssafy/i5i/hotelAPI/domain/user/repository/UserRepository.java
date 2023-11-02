@@ -1,14 +1,3 @@
-package com.ssafy.i5i.hotelAPI.domain.user.repository;
-
-
-import com.ssafy.i5i.hotelAPI.domain.user.entity.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
-import java.util.List;
-import java.util.Optional;
-
-public interface UserRepository extends JpaRepository<User, Long> {
-    @Query("SELECT u FROM User u WHERE u.token = :token AND u.isDeleted = false")
-    Optional<User> findByToken(String token);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:18c90ed3e0bc47d5af7da03219f472d5d2c78f2bae586288f11eba61ea19c360
+size 519
