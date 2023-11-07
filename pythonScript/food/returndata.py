@@ -1,12 +1,3 @@
-#스크래핑으로 받은 데이터 전처리하기 
-
-'''좌표 처리'''
-#api를 통해 좌표 없으면 만들어주기 
-#x,y 좌표 변환
-#https://dabid.tistory.com/3
-
-'''메뉴 전처리'''
-#숫자 뒤에 원 붙어있는 거 처리 
-
-
-'''컬럼명 변경'''
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d25f85d45e13092f93600bf501fe3f4162c3d4975e434232f0bfc0a1188f1ab
+size 785
