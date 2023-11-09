@@ -1,16 +1,3 @@
-spring:
-  elasticsearch:
-#    uris: "https://k9b205a.p.ssafy.io:443"
-    username: "csg1353"
-    password: "51@tlrlckd"
-    connection-timeout: 5s
-    socket-timeout: 30s
-    host: "k9b205a.p.ssafy.io"
-    port: 443
-  data:
-    elasticsearch:
-      repositories:
-        enabled: true
-logging:
-  level:
-    org.springframework.data.elasticsearch.client.WIRE: TRACE
+version https://git-lfs.github.com/spec/v1
+oid sha256:04295137f091da894de51efdf01686094d36adff55c3790b643b30437337a195
+size 579
