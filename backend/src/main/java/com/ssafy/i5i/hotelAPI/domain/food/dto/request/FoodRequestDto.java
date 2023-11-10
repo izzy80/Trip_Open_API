@@ -1,15 +1,3 @@
-package com.ssafy.i5i.hotelAPI.domain.food.dto.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-public class FoodRequestDto {
-	private Double latitude;
-	private Double longitude;
-	private Long distance;
-	private String sorted;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1cfb24d67967bdf055bee673356c851bfca5f2264d9cf976591f66a4b2c29bfe
+size 573
