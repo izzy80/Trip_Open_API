@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1201cd264944a88d3a724c0dd239ae167f11e35f041e9d1d45421f74c381d30c
-size 1015
+package com.ssafy.i5i.hotelAPI.domain.food.service;
+
+import java.util.List;
+
+import com.ssafy.i5i.hotelAPI.domain.food.dto.request.FoodRequestDto;
+import com.ssafy.i5i.hotelAPI.domain.food.dto.response.FoodResponseDto;
+
+public interface FoodService {
+	List<FoodResponseDto.TitleD> getFoodFromTravle(FoodRequestDto.Title attractionTitleRequestDto);
+
+	List<FoodResponseDto.Coordi> getFoodFromLngLatv(FoodRequestDto.Coordi attractionCoordiRequestDto);
+}
