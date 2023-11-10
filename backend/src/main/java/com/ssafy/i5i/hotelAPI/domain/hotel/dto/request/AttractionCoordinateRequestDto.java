@@ -9,8 +9,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 public class AttractionCoordinateRequestDto {
-    private BigDecimal latitude;
-    private BigDecimal longitude;
-    private Long distance;
+    private Double latitude;
+    private Double longitude;
+    private Integer distance;
     private String sorted;
 }
