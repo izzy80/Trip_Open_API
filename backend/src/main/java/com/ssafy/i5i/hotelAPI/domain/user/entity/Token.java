@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c79da06d1aa77bdbad2c01b35e9a588b38fdce1d10a936fafd7e7807780a1b3
-size 526
+package com.ssafy.i5i.hotelAPI.domain.user.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.redis.core.RedisHash;
+
+import java.util.concurrent.atomic.AtomicInteger;
+
+@Getter
+@Setter
+//24시간 동안 토큰 정보 저장
+@RedisHash(value = "token", timeToLive = 86400L)
+@AllArgsConstructor
+public class Token {
+    @Id
+    private String token;
+    private Integer count;
+}
