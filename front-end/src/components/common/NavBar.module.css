@@ -1,29 +1,3 @@
-.mainNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    background-color: #282c34;
-    border-bottom: 1px solid #e5e5e5;
-    height: 3.5rem;
-    font-family: 'Pretendard-Regular';
-}
-
-.navMenu {
-    cursor: pointer;
-    text-decoration: none;
-    position: relative;
-    display: flex;
-    padding: 0 1rem;
-    color: white;
-}
-
-.navLeft {
-    display: flex;
-    align-items: center;
-}
-
-.navRight {
-    display: flex;
-    align-items: center;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:426cbda6e64ccc5dbd077746397dc657070086184a424bed4781878d82e24f72
+size 1232
