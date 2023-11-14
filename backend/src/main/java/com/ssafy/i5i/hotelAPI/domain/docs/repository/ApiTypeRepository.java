@@ -1,10 +1,3 @@
-package com.ssafy.i5i.hotelAPI.domain.docs.repository;
-
-import com.ssafy.i5i.hotelAPI.domain.docs.entity.ApiType;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface ApiTypeRepository extends JpaRepository<ApiType,Long> {
-    List <ApiType> findAll();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8b716e8c413b66455132f1fd61cdcdaf810c460d58e43d4eb55b48a250b2500
+size 701
