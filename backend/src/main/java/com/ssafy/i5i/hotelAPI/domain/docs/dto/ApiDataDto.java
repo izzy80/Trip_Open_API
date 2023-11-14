@@ -1,26 +1,3 @@
-package com.ssafy.i5i.hotelAPI.domain.docs.dto;
-
-import lombok.*;
-
-@Getter
-@Setter
-public class ApiDataDto {
-
-    @Getter
-    @Setter
-    @Builder
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class ApiDataList {
-        private String title;
-        private String content;
-        private String method;
-        private String return_type;
-        private String content_type;
-        private String endpoint;
-        private String return_example;
-    }
-
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:15299389990db21bda20a8e82d537a7481404267cc64836f38f847473d06114d
+size 2407
