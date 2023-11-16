@@ -1,9 +1,3 @@
-package com.ssafy.i5i.hotelAPI.domain.hotel.repository;
-
-import com.ssafy.i5i.hotelAPI.domain.hotel.entity.Attraction;
-import org.springframework.data.jpa.repository.JpaRepository;
-import java.util.Optional;
-
-public interface AttractionRepository extends JpaRepository<Attraction, Long> {
-    Optional<Attraction> findByTitle (String title);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7d34b6e11ec5e414fea72284be36e906c4d053fe70094913ed1378edab45367
+size 535
