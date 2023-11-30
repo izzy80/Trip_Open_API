@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d25f85d45e13092f93600bf501fe3f4162c3d4975e434232f0bfc0a1188f1ab
-size 785
+import pandas as pd
+
+csv_file_path = 'travelfood.csv'
+output_csv_file = 'travelfood_v1.csv'
+
+df = pd.read_csv(csv_file_path, encoding='cp949')
+print(df.size)
+df['food_type'] = df['food_type'].str.replace(' ', '', regex=True)
+df['food_type'] = df['food_type'].str.replace('.', '/', regex=False) 
+df['food_name'] = df['food_name'].str.replace(',', ' ', regex=True)
+df['food_name'] = df['food_name'].str.replace('  ', ' ', regex=True)
+
+#컬럼명 변경 
+df.rename(columns={'food_id':'attraction_id'},inplace=True)
+df.rename(columns={'food_idx':'food_id'},inplace=True)
+df.rename(columns={'food_longtitude':'food_longitude'},inplace=True)
+df.rename(columns={'food_starUser':'food_staruser'},inplace=True)
+
+print(df[:3].head())
+df.to_csv(output_csv_file, index=False, encoding='utf-8-sig')

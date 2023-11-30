@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8b716e8c413b66455132f1fd61cdcdaf810c460d58e43d4eb55b48a250b2500
-size 701
+package com.ssafy.i5i.hotelAPI.domain.docs.repository;
+
+import com.ssafy.i5i.hotelAPI.domain.docs.entity.ApiDataVariable;
+import com.ssafy.i5i.hotelAPI.domain.docs.entity.ApiType;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface ApiTypeRepository extends JpaRepository<ApiType,Long> {
+    List <ApiType> findAll();
+
+//    @Query("SELECT a FROM ApiType a JOIN FETCH a.apiTypeId WHERE a.apiId.apiDataId = :apiDataId")
+//    Optional<List<ApiDataVariable>> getVariableInfo(@Param("apiDataId") Long apiDataId);
+}

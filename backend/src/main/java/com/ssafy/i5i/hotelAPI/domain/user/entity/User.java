@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e00c9b42828c347dca8b3f411be300dbccc2244a3313fa7f9ba17fb3fafe1064
-size 681
+package com.ssafy.i5i.hotelAPI.domain.user.entity;
+
+import lombok.*;
+
+import javax.persistence.*;
+import java.util.Date;
+
+@Entity
+@Getter
+@Table(name = "user")
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Builder
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
+    private Long userId;
+
+    @Column(name = "id", nullable = false)
+    private String id;
+    @Column(name = "password", nullable = false)
+    private String password;
+    @Column(name="token", nullable = false)
+    private String token;
+    @Column(name = "is_deleted", nullable = false)
+    private boolean isDeleted;
+
+}
+
+

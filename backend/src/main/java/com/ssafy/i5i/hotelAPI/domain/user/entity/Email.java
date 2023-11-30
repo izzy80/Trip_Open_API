@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb85d031feeb15a9aa02f342d54a1548b1c9e86b41837c4f7001d931fca6241b
-size 757
+package com.ssafy.i5i.hotelAPI.domain.user.entity;
+
+import lombok.*;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Getter
+@Setter
+@Table(name = "email")
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Builder
+public class Email {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "email_id")
+    private Long emailId;
+
+    @Column(name="email", length = 255, nullable = false)
+    private String email;
+
+    @Column(name="created_time")
+    private LocalDateTime createdTime;
+
+    @Column(name="authorized_time")
+    private LocalDateTime authorizedTime;
+
+    @Column(name="is_authorized")
+    private boolean isAuthorized;
+
+    @Column(name="code")
+    private Long code;
+}

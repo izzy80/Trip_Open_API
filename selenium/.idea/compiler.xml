@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31106b20086a1e1c4d508995b2e0c84c46abb32c56438e4f665134a606fdb93d
-size 824
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/2.7.16/4f118a21283b38e36ddb92aa7abb28ac8f98bc8b/spring-boot-configuration-processor-2.7.16.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.30/f195ee86e6c896ea47a1d39defbe20eb59cd149d/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="selenium.selenium.main" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

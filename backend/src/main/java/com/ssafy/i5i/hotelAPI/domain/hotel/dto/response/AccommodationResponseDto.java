@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80d93c703d3ef54caadd07067b1d569edc5a8327c79ccf293b6ee348b2ce16ee
-size 630
+package com.ssafy.i5i.hotelAPI.domain.hotel.dto.response;
+
+import lombok.*;
+
+import java.math.BigDecimal;
+
+@Getter
+@Setter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor()
+public class AccommodationResponseDto {
+    private String accommodationName;
+
+    private String accommodationType;
+
+    private String accommodationAddr;
+
+    private Double accommodationScore;
+
+    private String accommodationImg;
+
+    private Long accommodationPrice;
+
+    private Double accommodationLatitude;
+
+    private Double accommodationLongitude;
+
+    private Double relativeDistance;
+
+    private String attractionName;
+}

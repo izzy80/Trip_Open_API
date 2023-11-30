@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69f693b30e260adc728d39fbb69de91bee9561164d3d36ed0d7a9ac6eab0b409
-size 1046
+{
+  "properties" : {
+    "accommodation_addr": {
+      "fielddata": true,
+      "analyzer": "korean",
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      }
+    },
+    "accommodation_name": {
+      "fielddata": true,
+      "analyzer": "korean",
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      }
+    },
+    "accommodation_type": {
+      "fielddata": true,
+      "analyzer": "korean",
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      }
+    },
+    "accommodation_id": {
+      "type": "keyword"
+    },
+    "accommodation_pic": {
+      "type": "keyword"
+    },
+    "accommodation_lat": {
+      "type": "float"
+    },
+    "accommodation_lng": {
+      "type": "float"
+    },
+    "accommodation_price": {
+      "type": "float"
+    },
+    "accommodation_score": {
+      "type": "float"
+    }
+  }
+}

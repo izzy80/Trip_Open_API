@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d3b28b607fd4354c16936699aa0f5307e542a14ee35b093a6b58fdaf6a68690
-size 737
+package com.ssafy.i5i.hotelAPI.domain.docs.entity;
+
+import com.ssafy.i5i.hotelAPI.domain.docs.dto.TypeResponseDto;
+import lombok.Getter;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Getter
+@Table(name="api_type")
+public class ApiType {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "api_type_id")
+    private Long apiTypeId;
+
+    @Column(name="title", length = 300)
+    private String title;
+
+    @Column(length = 1000)
+    private String detail;
+
+    private String name;
+
+    @OneToMany(mappedBy = "apiType", fetch = FetchType.LAZY)
+    private List<ApiData> apiData;
+
+    public TypeResponseDto toDto(){
+        return new TypeResponseDto(apiTypeId, title, detail, name);
+    }
+}

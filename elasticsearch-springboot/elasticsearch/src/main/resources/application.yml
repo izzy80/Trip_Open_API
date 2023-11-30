@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c17b777fa19d455fe1a2736d8ac5bf6019972964b97392cafb138bbe62c9d1b
-size 655
+spring:
+  elasticsearch:
+    uris: "https://k9b205a.p.ssafy.io:443"
+    username: "csg1353"
+    password: "51@tlrlckd"
+    connection-timeout: 5s
+    socket-timeout: 30s
+    host: "k9b205a.p.ssafy.io"
+    port: 443
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+logging:
+  level:
+    org.springframework.data.elasticsearch.client.WIRE: TRACE
+  config: classpath:logback-spring.xml
+
+
+info:
+  analyzer:
+    nori : "korean"
+    nori-with-length : "korean_with_length"
+    nori-ngram : "korean_ngram"
+  index:
+    wiki: "scrap_wiki_final" #2글자 이상 term 분리된 필터 사용
+
+server:
+  servlet:
+    context-path: "/elastic/api"

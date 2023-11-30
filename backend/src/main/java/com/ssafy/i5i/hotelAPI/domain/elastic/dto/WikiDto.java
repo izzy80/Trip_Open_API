@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94331be0844af7b3f3e2f37f05287c604a2a66851e606ed3275ffb0c8348da3a
-size 553
+package com.ssafy.i5i.hotelAPI.domain.elastic.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class WikiDto {
+    float score;
+    String contentId;
+    String attractionName;
+    String wiki_title;
+    String wiki_content;
+    String overview;
+    Integer matchTerm;
+    Integer totalTerm;
+
+    public ResponseWikiDto toResponse(){
+        return new ResponseWikiDto(attractionName, wiki_title, wiki_content, overview, matchTerm, totalTerm);
+    }
+}
